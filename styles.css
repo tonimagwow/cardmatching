@@ -1,0 +1,72 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   background: #BADA55;
+}
+
+.container {
+   border: 2px solid rebeccapurple;
+   /* display: flex; */
+   /* width: 640px;
+   height: 640px; */
+}
+
+.level1 {
+   border: 2px solid rgb(17, 17, 194);
+   width: 640px;
+   height: 640px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   perspective: 1000px;
+}
+
+/* .level2 {
+   border: 2px solid rgb(211, 20, 173); 
+} */
+
+.card {
+   border: 2px solid rgb(201, 80, 43);
+   width: 25%;
+   height: 33.333%;
+   position: relative;
+   transform-style: preserve-3d;
+   transition: transform .5s;
+}
+
+/* .card:hover {
+   opacity: 50%;
+} */
+
+.card.rotate {
+   transform: rotateY(180deg);
+
+}
+
+.main, .back {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   border: 2px solid rgb(146, 157, 25);
+   position: absolute;
+   backface-visibility: hidden;
+}
+
+.main {
+   transform: rotateY(180deg);
+}
+
+/* img {
+   width: 100px;
+
+} */
+
+
+
+
