@@ -2,13 +2,13 @@ console.log ('It Works?')
 
 //variables for levels and cards? 
 let cardFlipped = false
-let firstClick
-let secondClick
-let deck = ['1', '1', '2', '2', '3', '3', '4', '4' ]
+let firstClick;
+let secondClick;
+let deck = $('.card')
 // let level1 = ('level 1')
 // let level2 = ('level 2')
 // let level3 = ('level 3')
-// let cards = document.querySelectorAll('.level1')
+
 $(() => {
     //make the game function to start the game on level one, with 8 cards (maybe add more cards), add a timer of 30sec, if you beat the timer move on to level 2, if you don't beat the timer, alert that they lost, prompt to play again or quit
     $('.card').click(turnCard) 
@@ -30,7 +30,10 @@ $(() => {
         }
     }
         
-    
+    $('.card').click(shuffleCards)
+    function shuffleCards() {
+        
+    }
     
 
 
