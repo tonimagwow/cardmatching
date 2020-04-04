@@ -15,7 +15,6 @@
 3. I need help with Shuffling arrays
 ... The hardest part of this project for me is getting my cards to shuffle. It's the main function to of the game in order to get the cards to be randomized, in order to have "random" cards on my board I swapped the location of cards in my HTML.
 
-
 ## Source and links
 
 ### Background image
@@ -26,6 +25,7 @@
 
 ### Fisher Yates Shuffle (still a work in progress)
 #### https://bost.ocks.org/mike/shuffle/
+#### https://www.tutorialspoint.com/what-is-fisher-yates-shuffle-in-javascript
 
 ### Jonathan Linch (bouncing ideas & pointers)
 #### Personal friend and Web Developer

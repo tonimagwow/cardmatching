@@ -81,8 +81,8 @@ h1 {
    background-color: #BADA55;
 }
 
-button {
-   font-family: monospace;
+/* button { */
+   /* font-family: monospace;
    text-transform:uppercase;
    font-size: medium;
    background:#555;
@@ -91,7 +91,7 @@ button {
    padding:20px 20px;
    color:rgb(203, 19, 19);
    cursor:pointer;
-}
+} */
 
 
 
