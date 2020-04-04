@@ -2,102 +2,59 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Meme Cat Match</title>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+        <title>Memory Match</title>
         <script src="app.js" charset="utf-8"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Test</h1>
+        <h1>Memory Match</h1>
+        <button id="btn">Reset</button>
             <div class="container">
-                <div class="level1">
-                    <div class="card" id="1">
-                        <img class="main" src="https://i.pinimg.com/236x/63/ac/58/63ac588a3274e06c099eca83f37b20f3.jpg" alt="beep boop">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-                    <div class="card" id="1">
-                        <img class="main" src="https://i.pinimg.com/236x/63/ac/58/63ac588a3274e06c099eca83f37b20f3.jpg" alt="beep boop">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-
-
-                    <div class="card" id="2">
-                        <img class="main" src="https://media.makeameme.org/created/i-have-no-5ada46.jpg" alt="no idea cat">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-                    <div class="card" id="2">
-                        <img class="main" src="https://media.makeameme.org/created/i-have-no-5ada46.jpg" alt="no idea catt">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-
-
-                    <div class="card" id="3">
-                        <img class="main" src="https://i.pinimg.com/736x/a7/c9/89/a7c989f0791962f318f291110b7dc99f.jpg" alt="gonna code cat">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-                    <div class="card" id="3">
-                        <img class="main" src="https://i.pinimg.com/736x/a7/c9/89/a7c989f0791962f318f291110b7dc99f.jpg" alt="gonna code cat">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-
-
-                    <div class="card" id="4">
-                        <img class="main" src="https://i.imgflip.com/23mt9b.jpg" alt="matrix cat">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-                    <div class="card" id="4">
-                        <img class="main" src="https://i.imgflip.com/23mt9b.jpg" alt="matrix cat">
-                        <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
+                <div class="winner" id="winner-message"><h1>WINNER</h1></div>
+                <div class="deck">
+                    <!-- added an onclick button to call the function in JS  -->
+                    <div class="card red color" id="red"
+                    onclick="flipOver(event)"></div>
+                    <div class="card pink color" id="pink"
+                    onclick="flipOver(event)"></div>                
+                    <div class="card blue color" id="blue"
+                    onclick="flipOver(event)"></div>
+                    <div class="card yellow color" id="yellow" 
+                    onclick="flipOver(event)"></div>
                 </div>
 
-                
-                <!-- <div class="level2">
-                    <div class="card">
-                        <img class="main" src="" alt="b"> <img class="back" src="https://images-cdn.9gag.com/photo/aGjyXwz_460s.jpg" alt="sleepy cat">
-                    </div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                <div class="deck">
+                    <div class="card red color" id="red"
+                    onclick="flipOver(event)"></div>
+                    <div class="card black color" id="black"
+                    onclick="flipOver(event)"></div>                
+                    <div class="card purple color" id="purple" 
+                    onclick="flipOver(event)"></div>
+                    <div class="card green color" id="green"
+                    onclick="flipOver(event)"></div>
                 </div>
-                <div class="level3">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+
+                <div class="deck">
+                    <div class="card green color" id="green"
+                    onclick="flipOver(event)"></div>
+                    <div class="card orange color" id="orange" 
+                    onclick="flipOver(event)"></div>                
+                    <div class="card yellow color" id="yellow" 
+                    onclick="flipOver(event)"></div>
+                    <div class="card blue color" id="blue"
+                    onclick="flipOver(event)"></div>
                 </div>
-            </div> -->
-    </body>
+
+                <div class="deck">
+                    <div class="card pink color" id="pink"
+                    onclick="flipOver(event)"></div>
+                    <div class="card purple color" id="purple"
+                    onclick="flipOver(event)"></div>                
+                    <div class="card orange color" id="orange"
+                    onclick="flipOver(event)"></div>
+                    <div class="card black color" id="black"
+                    onclick="flipOver(event)"></div>
+                </div>                
+            </div>
+        </body>
     </html>
